@@ -1,204 +1,144 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-*{
+* {
     margin: 0px;
     padding: 0px;
-}
-/* Rectangle 28 */
-#navbar{
-position: fixed;
-width: 100%;
-height: 68px;
-text-align: center;
-text-decoration: none;
-
-background: rgba(0, 0, 0, 0.9);
-box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
-}
-#navlinks a{
-text-decoration: none;
-}
-/* image 2 (csi logo)*/
-
-#logo{
-position: relative;
-left: 25px;
-/* right: 93.19%; */
-top: 11px;
-/* bottom: 96.72%; */
-width: 85px; 
-height: auto;
-padding: 25px 0px;
-background-repeat: no-repeat;
-
-background: url(./images/icon.png);
-/* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
-}
-/* HOME */
-
-#home{
-position: absolute;
-width: 48px;
-height: 66px;
-left: 503px;
-top: 1px;
-
-font-family: Poppins;
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 24px;
-display: flex;
-align-items: center;
-
-color: #FFFFFF;
-
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-/* COURSES */
-
-#courses{
-position: absolute;
-width: 74px;
-height: 66px;
-left: 588px;
-top: 1px;
-
-font-family: Poppins;
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 24px;
-display: flex;
-align-items: center;
-
-color: #FFFFFF;
-
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Poppins;
 }
 
-/* CERTIFICATION */
-
-#certification{
-position: absolute;
-width: 120px;
-height: 66px;
-left: 699px;
-top: 2px;
-
-font-family: Poppins;
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 24px;
-display: flex;
-align-items: center;
-
-color: #FFFFFF;
-
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.navBar {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
 }
 
-/* MY LEARNING */
-
-#myLearning{
-position: absolute;
-width: 106px;
-height: 66px;
-left: 856px;
-top: 1px;
-
-font-family: Poppins;
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 24px;
-display: flex;
-align-items: center;
-
-color: #FFFFFF;
-
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.logo {
+    width: 100%;
+    background: url("./images/icon.png");
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0px;
+    margin: 0px;
+    width: 72px;
+    height: 43px;
 }
 
-/* Rectangle 38 (login/sign up)*/
-
-#login{
-position: absolute;
-width: 150px;
-height: 32px;
-left: 1257px;
-top: 18px;
-
-background: #FFFFFF;
-border-radius: 9px;
+nav {
+    height: 43px;
 }
 
-/* Rectangle 39 */
-
-#back{
-position: absolute;
-width: 1317px;
-height: 448px;
-left: 100px;
-top: 123px;
-
-background: #272727;
-border-radius: 22px;
+.links li {
+    color: white;
+    margin: 5px;
+    display: inline-block;
 }
 
-/* Learn the skills of the future with free RPA training */
-
-#text{
-position: absolute;
-width: 900px;
-height: 310px;
-right: 3px;
-top: 0px;
-
-font-family: Poppins;
-font-style: normal;
-font-weight: 500;
-font-size: 64px;
-line-height: 96px;
-display: flex;
-align-items: center;
-
-color: #EDF2F4;
-word-break: break-all;
-padding: 20px;
+.links a {
+    text-decoration: none;
+    color: white;
 }
 
-/* Rectangle 40 */
-
-#explore{
-position: absolute;
-width: 280px;
-height: 63px;
-left: 950px;
-top: 280px;
-
-background: #FFD2B8;
-border-radius: 22px;
-}
-#explore:hover{
-background-color: #ffb8c2;
-font-size: larger;
-
-}
-/* unsplash:Y8TiLvKnLeg */
-
-#pic{
-position: relative;
-width: 697px;
-height: 448px;
-left: 0px;
-top: 0px; 
-
-background: url(./images/image1.png);
-border-radius: 22px;
+.logInButton {
+    width: 150px;
+    height: 32px;
+    float: right;
+    background: #FFFFFF;
+    border-radius: 9px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
 }
 
-#navlinks a:hover,#text:hover{
-text-decoration: underline;
-color: silver;
+.section1 {
+    background-color: black;
+    width: 1100px;
+    height: 320px;
+    margin: 10px;
+    margin-top: 30px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 22px;
+}
+
+.section1Image {
+    background-image: url("images/image1.png");
+    position: relative;
+    width: 600px;
+    height: 320px;
+    left: 0px;
+    top: 0px;
+    border-radius: 22px;
+    background-size: cover;
+}
+
+.exploreButton {
+    position: relative;
+    width: 220px;
+    height: 63px;
+    left: 830px;
+    top: -470px;
+    font-size: 30px;
+    background: #FFD2B8;
+    border-radius: 22px;
+}
+
+.exploreButton:hover {
+    background-color: #ffb8c2;
+    font-size: larger;
+}
+
+.overImageText {
+    position: relative;
+    width: 770px;
+    height: 310px;
+    left: 320px;
+    top: -375px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 68px;
+    display: flex;
+    align-items: center;
+    color: #EDF2F4;
+    word-break: break-all;
+    padding: 20px;
+}
+
+@media(max-width: 900px) {
+    .navBar nav {
+        /* display: none; */
+        margin: 0px;
+        padding: 0px;
+        font-size: 10px;
+    }
+    .logInButton {
+        display: none;
+    }
+    .section1 {
+        width: 100%;
+        height: auto;
+    }
+    .section1Image {
+        width: 100%;
+        background-size: cover;
+    }
+    .overImageText {
+        width: 318px;
+        font-size: 45px;
+        left: 0px;
+        top: 0px;
+        line-height: 50px;
+    }
+    .exploreButton {
+        top: -50px;
+        left: 100px;
+    }
 }

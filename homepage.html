@@ -1,27 +1,35 @@
 <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Section 1</title>
+</head>
+
 <body>
-    <link rel="stylesheet" href="homepage.css">
-    <div>
-        <section>
-            <nav id=navbar>
-            <div id="logo"></div>
-            <ul id="navlinks">
-            <a href="homepage.html" id="home">HOME</a>
-            <a href="coursepage.html" id="courses">COURSES</a>
-            <a href="certification.html" id="certification">CERTIFICATION</a>
-            <a href="learning.html" id="myLearning">MY LEARNING</a>
+    <section class="navBar">
+        <div class="logo"></div>
+        <nav>
+            <i class="fas fa-times" style="display: none;" onclick="hideMe()"></i>
+            <ul class="links">
+                <li><a href="">HOME</a></li>
+                <li><a href="">COURSES</a></li>
+                <li><a href="">CERTIFICATION</a></li>
+                <li><a href="">MY LEARNING</a></li>
             </ul>
-            <button type="button" id="login">LOGIN/SIGNUP</button> 
         </nav>
-        <article id="back">
-            <div id="pic"></div>
-            <div id="text">
-                <p>Learn the skills of the future with free RPA training</p>
-            </div>
-            <button type="button" id="explore">Explore</button>
-        </article>
-        
-        </section>
-    </div>
+        <i class="fas fa-bars" style="display: none;" onclick="showMe()"></i>
+        <button class="logInButton">LOGIN/SIGNUP</button>
+    </section>
+    <section class="section1">
+        <div class="section1Image"></div>
+        <div class="overImageText">Learn the skills of the future with free RPA <br>training</div>
+        <button class="exploreButton">explore</button>
+    </section>
 </body>
+
 </html>
